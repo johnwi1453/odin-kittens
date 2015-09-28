@@ -1,0 +1,1 @@
+Simple kittens API from the Odin Project -- http://www.theodinproject.com/ruby-on-rails/apis
