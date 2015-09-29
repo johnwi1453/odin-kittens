@@ -5,6 +5,9 @@
   <% @kittens.each do |kitten| %>
     <ul>
       <li><%= kitten.name %></li>
+      <li><%= link_to 'Destroy', kitten, method: :delete, data: { confirm: 'Are you sure?'} %></li>
     </ul>
 <% end %>
 </div>
+
+<%= link_to 'New Kitten', new_kitten_path %>

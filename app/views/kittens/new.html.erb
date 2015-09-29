@@ -1,20 +1,7 @@
 <h1>Kittens#New</h1>
 
-<p>Create a new Kitten</p>
-<%= form_for @kitten do |f| %>
+<p>Create a new kitten</p>
 
-  <%= f.label :name %>
-  <%= f.text_field :name %></br>
+<%= render 'form' %>
 
-  <%= f.label :age %>
-  <%= f.number_field :age %></br>
-
-  <%= f.label :cuteness %>
-  <%= f.number_field :cuteness %></br>
-
-  <%= f.label :softness %>
-  <%= f.number_field :softness %></br>
-
-  <%= f.submit "Submit" %>
-
-<% end %>
+<%= link_to 'Back', kittens_path %>
